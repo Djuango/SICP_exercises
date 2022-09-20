@@ -1,0 +1,7 @@
+;练习1.3
+(define (smallest a b c)
+  (cond [(and (<= a b) (<= a c)) a]
+        [(and (<= b a) (<= b c)) b]
+        [else c]))
+(define (sum-of-two-largest a b c)
+  (- (+ a b c) (smallest a b c)))
